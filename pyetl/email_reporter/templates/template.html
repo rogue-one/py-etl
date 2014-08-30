@@ -1,0 +1,18 @@
+<div>
+    <div align="center"><h2>{{title}}</h2></div>
+    <div><h2>{{description}}</h2></div>
+    <table>
+        <tr>
+            {% for key in fields %}
+            <th style="border: 1px solid black; border-collapse: collapse; padding: 5px; background-color: greenyellow; "> {{key}}</th>
+            {% endfor %}
+        </tr>
+        {% for row in rows %}
+        <tr>
+            {% for field in row %}
+            <td style="border: 1px solid black; border-collapse: collapse; padding: 5px; background-color: darkgray;">{{field}}</td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+</div>

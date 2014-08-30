@@ -1,0 +1,14 @@
+database:
+    query: |
+      SELECT * from email_metadata
+    data_source:
+       dsn: test_server
+       ansi: True
+
+email:
+     from: mymail.1@gmail.com
+     to: mymail.2@gmail.com #semicolon separated list
+     subject: My Database report
+
+
+
